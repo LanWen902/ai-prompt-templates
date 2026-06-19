@@ -3,70 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 提示词模板包 - $5</title>
+<meta name="description" content="AI提示词模板包 - 50个经过验证的高效AI提示词，覆盖编程、写作、分析、设计、学习。免费试用提示词生成器。">
+<title>AI提示词模板包 - 免费提示词生成器 | $5 完整版</title>
+
 <style>
-body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #fff; color: #333; }
-.pay-button { display: inline-block; background: #0070f3; color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-size: 16px; margin: 10px 0; }
-.wallet { background: #f5f5f5; padding: 12px; border-radius: 6px; word-break: break-all; font-family: monospace; font-size: 13px; }
-.price { font-size: 48px; font-weight: bold; color: #0070f3; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fafc; color: #1e293b; }
+.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 60px 20px; text-align: center; }
+.hero h1 { font-size: 36px; margin-bottom: 12px; }
+.hero p { font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+.tool-box { background: #fff; border-radius: 12px; padding: 30px; margin: -30px auto 30px; box-shadow: 0 4px 24px rgba(0,0,0,0.1); position: relative; }
+.tool-box h2 { font-size: 22px; margin-bottom: 20px; text-align: center; }
+.category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 24px; }
+.cat-btn { padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; background: #fff; cursor: pointer; font-size: 14px; transition: all 0.2s; text-align: center; }
+.cat-btn:hover, .cat-btn.active { border-color: #667eea; background: #eef2ff; color: #667eea; font-weight: 600; }
+.template-output { background: #1e293b; color: #e2e8f0; border-radius: 8px; padding: 20px; font-family: 'SF Mono', Monaco, monospace; font-size: 13px; line-height: 1.7; white-space: pre-wrap; min-height: 180px; margin-bottom: 16px; }
+.copy-btn { display: block; width: 100%; padding: 12px; background: #667eea; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; margin-bottom: 20px; }
+.copy-btn:hover { background: #5a67d8; }
+.section { background: #fff; border-radius: 12px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.section h3 { font-size: 20px; margin-bottom: 16px; }
+.price-tag { font-size: 56px; font-weight: 800; color: #667eea; text-align: center; margin: 16px 0; }
+.pay-box { background: #eef2ff; border-radius: 12px; padding: 24px; text-align: center; margin: 16px 0; }
+.pay-box .wallet { background: #fff; padding: 12px; border-radius: 8px; word-break: break-all; font-family: monospace; font-size: 13px; color: #475569; margin: 12px 0; border: 1px solid #e2e8f0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: #f8fafc; font-weight: 600; }
+footer { text-align: center; padding: 30px; color: #94a3b8; font-size: 13px; }
+@media (max-width: 600px) {
+  .hero h1 { font-size: 26px; }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+img.inline-img { max-width: 48px; max-height: 48px; margin: 10px 10px; }
 </style>
 </head>
 <body>
-# 💎 AI 超级提示词模板包
-## 50个经过验证的高效提示词，让你的 AI 助手产出翻倍
 
----
+<div class="hero">
+  <h1>💎 AI 超级提示词模板包</h1>
+  <p>50 个验证过的高效提示词 · 让你的 AI 产出翻倍</p>
+</div>
 
-> **价格：$5（≈36 RMB）**  
-> **支付方式：ETH / USDT / USDC（ERC-20 / BEP-20）**  
-> **钱包地址：`0x89a43213b6aff1608bb97b4872fbb2c13f3a8f66`**
->
-> 支付后截图发送至下方联系方式，立即获得完整版 + 终身更新。
+<div class="container">
 
----
+  <div class="tool-box">
+    <h2>🎲 免费提示词生成器</h2>
+    <p style="text-align:center;color:#64748b;margin-bottom:16px">选一个场景，立刻生成可用的提示词模板</p>
+    <div class="category-grid">
+      <button class="cat-btn active" onclick="showTemplate('code')">💻 代码生成</button>
+      <button class="cat-btn" onclick="showTemplate('debug')">🐛 Bug诊断</button>
+      <button class="cat-btn" onclick="showTemplate('writing')">✍️ 写作助手</button>
+      <button class="cat-btn" onclick="showTemplate('data')">📊 数据分析</button>
+      <button class="cat-btn" onclick="showTemplate('product')">🎯 产品设计</button>
+      <button class="cat-btn" onclick="showTemplate('learn')">📚 学习效率</button>
+    </div>
+    <div class="template-output" id="templateOutput"></div>
+    <button class="copy-btn" onclick="copyTemplate()">📋 一键复制</button>
+    <p style="text-align:center;color:#64748b;font-size:14px">
+      👆 这只是 50 个模板中的 <b>6</b> 个免费预览。<br>
+      完整版 $5，含全部 50 个模板 + 速查表 + 调优指南。
+    </p>
+  </div>
 
-## 📋 目录
+  <div class="section">
+    <h3>💰 获取完整版 — 仅需 $5</h3>
+    <div class="price-tag">$5</div>
+    <div class="pay-box">
+      <p style="margin-bottom:8px;font-weight:600">支付到以下地址</p>
+      <div class="wallet">0x89a43213b6aff1608bb97b4872fbb2c13f3a8f66</div>
+      <p style="color:#64748b;font-size:13px">ETH · USDT · USDC (ERC-20 / BEP-20 / Polygon)</p>
+    </div>
+    <p style="text-align:center">支付后截图发到 Telegram <b>@Wen_902_bot</b>，5 分钟内收到完整版</p>
+  </div>
 
-1. [编程开发类（15个）](#1-编程开发类)
-2. [写作创作类（10个）](#2-写作创作类)
-3. [数据分析类（8个）](#3-数据分析类)
-4. [产品设计类（7个）](#4-产品设计类)
-5. [学习效率类（10个）](#5-学习效率类)
-6. [高阶技巧](#高阶技巧)
+  <div class="section">
+    <h3>🎁 完整版内容</h3>
+    <table>
+      <tr><th>模块</th><th>模板数</th><th>亮点</th></tr>
+      <tr><td>💻 编程开发</td><td>15</td><td>PR Review · 重构 · 架构设计</td></tr>
+      <tr><td>✍️ 写作创作</td><td>10</td><td>公众号 · 小红书 · 技术博客</td></tr>
+      <tr><td>📊 数据分析</td><td>8</td><td>SQL · Excel · Python</td></tr>
+      <tr><td>🎯 产品设计</td><td>7</td><td>PRD · 用户故事 · 竞品分析</td></tr>
+      <tr><td>📚 学习效率</td><td>10</td><td>费曼学习法 · 知识整理 · 速读</td></tr>
+    </table>
+    <p style="text-align:center;color:#667eea;font-weight:600">+ 赠送：30 个速查表 · API 调优指南 · 提示词工程实践</p>
+  </div>
 
----
+</div>
 
-## 1. 编程开发类
+<footer>由 Hermes Agent 制作 · 7 天无理由退款</footer>
 
-### 1.1 代码生成（预览）
-
-```
-你是一位资深{语言}开发者。请根据以下需求生成生产级代码：
+<script>
+const templates = {
+  code: `你是一位资深{语言}开发者。请根据以下需求生成生产级代码：
 
 【需求】{描述你要实现的功能}
+
 【约束】
 - 遵循 {语言} 最佳实践
 - 包含完整的错误处理
 - 添加类型注解（如适用）
 - 编写单元测试
-- 添加中文注释说明关键逻辑
 
 【输出格式】
 1. 先解释你的实现思路（50字以内）
 2. 输出完整代码
-3. 说明测试方法
-```
+3. 说明测试方法`,
 
-### 1.2 Bug 诊断（预览）
-
-```
-我有一个 {语言} 的 Bug，请帮我诊断。
+  debug: `我有一个 {语言} 的 Bug，请帮我诊断。
 
 【错误信息】
 {粘贴错误日志}
 
 【相关代码】
+\`\`\`
 {粘贴代码片段}
+\`\`\`
 
 【已尝试的方法】
 {描述你已经试过什么}
@@ -75,69 +128,83 @@ body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto;
 1. 判断最可能的根因（80%置信度即可）
 2. 给出修复方案（含代码diff）
 3. 解释为什么之前的方法没生效
-4. 建议如何防止类似问题
-```
+4. 建议如何防止类似问题`,
 
----
+  writing: `请以{角色}的身份，写一篇关于{主题}的{文章类型}。
 
-*以上仅为前2个模板的预览。完整版包含50个模板，覆盖编程、写作、分析、设计、学习5大场景。*
+【读者画像】{描述目标读者}
+【核心观点】{你的核心论点}
+【风格要求】
+- 语气：{专业/轻松/犀利}
+- 字数：{字数范围}字
+- 包含至少{数量}个具体案例
 
----
+【结构要求】
+1. 开头：用{钩子类型}引起兴趣
+2. 主体：{分几个部分}
+3. 结尾：{行动号召/总结}`,
 
-## 💰 如何获取完整版
+  data: `请帮我分析以下数据，找出关键洞察。
 
-**三步拿到完整版：**
+【数据背景】{描述数据来源和业务场景}
 
-1. **支付 $5** 到以下任意钱包：
-   - **ETH/ERC-20**: `0x89a43213b6aff1608bb97b4872fbb2c13f3a8f66`
-   - **BSC/BEP-20**: `0x89a43213b6aff1608bb97b4872fbb2c13f3a8f66`
+【数据样本】
+\`\`\`
+{粘贴你的数据}
+\`\`\`
 
-2. **截图交易哈希**
+【分析要求】
+1. 数据概览（总量、分布、异常值）
+2. 3 个最重要的趋势
+3. 可执行的业务建议
+4. 需要进一步收集的数据
 
-3. **通过以下方式发送截图**：
-   - Telegram: @Wen_902_bot
-   - 或直接回复此页面
+输出格式：Markdown 报告`,
 
-**收到确认后 5 分钟内发送完整版 PDF + Markdown。**
+  product: `请帮我撰写一份产品需求文档（PRD）。
 
----
+【产品名称】{产品名}
+【目标用户】{目标用户描述}
+【核心问题】{用户面临的问题}
+【解决方案概述】{你的产品如何解决}
 
-### 🎁 完整版包含
+请按以下结构输出：
+1. 背景与目标
+2. 用户故事（至少3个）
+3. 功能需求（P0/P1/P2优先级）
+4. 非功能需求
+5. 成功指标
+6. 竞品分析`,
 
-| 模块 | 模板数 | 亮点 |
-|------|--------|------|
-| 编程开发 | 15个 | 含 PR Review、重构、架构设计模板 |
-| 写作创作 | 10个 | 含公众号/小红书/技术博客模板 |
-| 数据分析 | 8个 | 含 SQL/Excel/Python 分析模板 |
-| 产品设计 | 7个 | 含 PRD/用户故事/竞品分析模板 |
-| 学习效率 | 10个 | 含费曼学习法/知识整理/速读模板 |
+  learn: `请用费曼学习法教我理解 {概念/主题}。
 
-**额外赠送**：
-- 30个 "一句话提示词" 速查表
-- ChatGPT API 温度参数调优指南
-- 提示词工程最佳实践（5页浓缩版）
+【我的背景】{你当前的知识水平}
 
----
+【要求】
+1. 用最简单的类比解释（像给12岁孩子讲）
+2. 举3个日常生活中的例子
+3. 提出3个检测我理解的问题
+4. 推荐深入学习该主题的路径（从入门到精通）
+5. 列出常见误解`
+};
 
-## ⚠️ 常见问题
+function showTemplate(key) {
+  document.getElementById('templateOutput').textContent = templates[key];
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
 
-**Q: 支付后多久收到？**  
-A: 自动处理，5分钟以内。
+function copyTemplate() {
+  const text = document.getElementById('templateOutput').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = '✅ 已复制！';
+    setTimeout(() => btn.textContent = '📋 一键复制', 2000);
+  });
+}
 
-**Q: 支持什么链？**  
-A: Ethereum 主网、BSC、Polygon、Arbitrum 都可以。只要能把 ETH/USDT/USDC 转到上面的地址就行。
-
-**Q: $5 能退吗？**  
-A: 7天内不满意全额退款，发消息就行。
-
-**Q: 更新要额外付费吗？**  
-A: 不需要。一次购买，终身更新。
-
----
-
-> *这 50 个模板是我从数百次实际使用中筛选验证的。它们不是「万能提示词」，而是经过反复打磨的「解题框架」。每个模板都有一个核心逻辑——学会它，你就能自己写出好提示词。*
->
-> — Hermes Agent 出品
+showTemplate('code');
+</script>
 
 </body>
 </html>
